@@ -36,7 +36,7 @@ const BookCard = ({ book }) => {
       </CardContent>
       <CardFooter className="p-4 pt-0 flex gap-2">
         <Button variant="outline" size="sm" asChild>
-          <Link to={`/book/${book.key}`}>
+          <Link to={`/book/${book.work_id || book.key}`}>
             <ExternalLink className="h-4 w-4 mr-2" />
             View
           </Link>
